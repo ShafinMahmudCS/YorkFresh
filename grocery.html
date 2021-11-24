@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Grocery</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous">
+</script><link rel="stylesheet" href="Styles/grocery.css">
+
+</head>
+<body>
+  <div class="navigation">
+    <div class="Navbar__Link Navbar__Link-brand">
+      <img src="images/icon/York_fresh.jpeg" alt="icon" id="i_con">
+     </div>
+     <div class="Navbar__Link Navbar__Link-toggle">
+      <i class="fas fa-bars"></i>
+     </div>
+
+   <nav class="Navbar__Items Navbar__Items--right" id="alignment">
+
+      <a href="index.html" ><b>Home</b></a>
+     
+      <a href="recipes.html"><b>Recipes</b></a>
+     
+      <a href="grocery.html"><b>Grocery</b></a>
+     
+      <button type="button" class="primary" data-toggle="modal" data-target="#cart">Cart (<span class="total-count"></span>)</button>
+     
+   </nav>
+ </div>
+
+<div class="spinner-wrapper">
+  <div class="sk-chase">
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+  </div>
+  </div>
+
+  <header class="main-header">
+    <h1><b>Fresh and affordable <span>Groceries</span></b></h1>
+    <p id="success"></p>
+</header>
+  
+<div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="http://www.azspagirls.com/files/2010/09/orange.jpg" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">Orange</h4>
+    <p class="card-text">Price: $0.5 ea</p>
+    <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="http://images.all-free-download.com/images/graphicthumb/vector_illustration_of_ripe_bananas_567893.jpg" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">Bananas(Bunch)</h4>
+    <p class="card-text">Price: $1.45 ea</p>
+    <a href="#" data-name="Bananas(Bunch)" data-price="1.45" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="https://3.imimg.com/data3/IC/JO/MY-9839190/organic-lemon-250x250.jpg" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">Lemon</h4>
+    <p class="card-text">Price: $1.09 ea</p>
+    <a href="#" data-name="Lemon" data-price="1.09" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="https://assets.shop.loblaws.ca/products/20070132001/b1/en/front/20070132001_front_a01_@2.png" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">Cucumber</h4>
+    <p class="card-text">Price: $2.49 ea</p>
+    <a href="#" data-name="Cucumber" data-price="2.49" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="https://assets.shop.loblaws.ca/products/20107500001/b1/en/front/20107500001_front_a01_@2.png" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">Onion(Green) </h4>
+    <p class="card-text">Price: $1.45 ea</p>
+    <a href="#" data-name="Onion(Green)" data-price="1.45" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="https://assets.shop.loblaws.ca/products/20026703001/b1/en/front/20026703001_front_a01_@2.png" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">Tomato</h4>
+    <p class="card-text">Price: $3.90 ea </p>
+    <a href="#" data-name="Tomato" data-price="3.90" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="https://assets.shop.loblaws.ca/products/20049778001/b1/en/front/20049778001_front_a01_@2.png" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">Strawberries-1LB</h4>
+    <p class="card-text">Price: $5.49 ea</p>
+    <a href="#" data-name="Strawberries-1LB" data-price="5.49" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="https://assets.shop.loblaws.ca/products/20142232001/b1/en/front/20142232001_front_a01_@2.png" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">Avocados(Bag)</h4>
+    <p class="card-text">Price: $5.45 ea</p>
+    <a href="#" data-name="Avocados(Bag)" data-price="5.45" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="https://assets.shop.loblaws.ca/products/20811994001/b1/en/front/20811994001_front_a01_@2.png" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">Onions(Yellow)</h4>
+    <p class="card-text">Price: $2.49 ea</p>
+    <a href="#" data-name="Onions(Yellow)" data-price="2.49" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="https://assets.shop.loblaws.ca/products/20152465001/b1/en/front/20152465001_front_a01_@2.png" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">Blueberries</h4>
+    <p class="card-text">Price: $3.99 ea</p>
+    <a href="#" data-name="Blueberries" data-price="3.99" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="https://assets.shop.loblaws.ca/products/20127708001/b1/en/front/20127708001_front_a01_@2.png" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">Potato(sweet)</h4>
+    <p class="card-text">Price: $2.49 ea</p>
+    <a href="#" data-name="Potato(sweet)" data-price="2.49" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="https://img.makeupalley.com/thumb/h/350/5_5_6_7_2971910.JPG" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">Sunflower(oil)-1L</h4>
+    <p class="card-text">Price: $4.00 ea</p>
+    <a href="#" data-name="Sunflower(oil)-1L" data-price="4.00" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="https://d2d8wwwkmhfcva.cloudfront.net/699x699/filters:fill(FFF,true):format(webp)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4214882b-83e4-4937-bad3-1049a6c4acb1.png" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">Carrots-2lb</h4>
+    <p class="card-text">Price: $2.40 ea</p>
+    <a href="#" data-name="Carrots-2lb" data-price="2.40" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="https://d2d8wwwkmhfcva.cloudfront.net/699x699/filters:fill(FFF,true):format(webp)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_89c5c4e0-b2cb-43ef-8876-34f3bc17f2f0.JPG" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">Potato(Yellow)-5lb</h4>
+    <p class="card-text">Price: $5.29 ea</p>
+    <a href="#" data-name="Potato(Yellow)-5lb" data-price="5.29" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="https://media.istockphoto.com/photos/basmati-rice-pile-isolated-on-white-background-picture-id163167576?k=20&m=163167576&s=612x612&w=0&h=uEeCjGuYPBGyd2-EvKXTIRBXTiWkOn9UOiaM8FadYx0=" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">Rice(Basmati)-8lb</h4>
+    <p class="card-text">Price: $9.15 ea</p>
+    <a href="#" data-name="Rice(Basmati)-8lb" data-price="9.15" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
+      </div>
+
+    </div>
+</div>
+
+<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"><img src="images/cart.svg" alt="icon" id="icon2">Cart<img src="images/icon/York_fresh.jpeg" alt="icon" id="i_con2"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table class="show-cart table">
+          
+        </table>
+        <div class="right">
+        <div >Subtotal:<span class="total-cart"></span></div>
+        <div >Taxes(13%):<span class="tax-cart"></span></div>
+        <div >Total price:<span class="total"></span></div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        </button><button class="clear-cart btn btn-danger">Clear Cart</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" id="popup" onclick="myFunction()">Order now</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="Script/script.js"></script>
+
+</body>
+</html>
