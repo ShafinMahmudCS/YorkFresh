@@ -1,3 +1,5 @@
+<div align="center">
+  
 # York Fresh
 
 ## My hackathon project from the _UNHack 2021_, organized by the Lassonde School of Engineering.
@@ -9,3 +11,4 @@ _____________________
 ![3rd page](https://user-images.githubusercontent.com/91167955/147101751-1f9b8d00-7cc8-4c36-a2de-749d14e6804f.png)
 _____________________
 ![4th page](https://user-images.githubusercontent.com/91167955/147101754-71260682-06e8-44d1-b435-98a394dc09f7.png)
+</div>
