@@ -1,12 +1,8 @@
-$(document).ready(function() {
-    //Preloader
-    preloaderFadeOutTime = 500;
-    function hidePreloader() {
-    var preloader = $('.spinner-wrapper');
-    preloader.fadeOut(preloaderFadeOutTime);
-    }
-    hidePreloader();
-    });
+var loader = setInterval(function () {
+  if(document.readyState !== "complete") return;
+  clearInterval(loader);
+  document.querySelector('.spinner-wrapper').style.display = "none";
+}, 300);
 
 var shoppingCart = (function() {
   cart = [];
