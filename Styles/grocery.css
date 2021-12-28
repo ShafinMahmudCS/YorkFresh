@@ -107,7 +107,7 @@ overflow: hidden;
 }
 
 .card-block a:visited{
-  color:blanchedalmond;
+  color:white;
 }
 
 /*popup*/
@@ -219,7 +219,7 @@ left: 48%;
   }
   
   #success{
-    font-size: 3vw;
+    font-size: 1.5vw;
   }
   
   .main-header h1 span {
