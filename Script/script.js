@@ -133,17 +133,24 @@ var shoppingCart = (function () {
 })();
 
 // Add item
-$(".add-to-cart").click(function (event) {
+$(".add-to-cart-button").click(function (event) {
   event.preventDefault();
   var name = $(this).data("name");
   var price = Number($(this).data("price"));
   shoppingCart.addItemToCart(name, price, 1);
   displayCart();
-  document.getElementById("success").innerHTML =
-    "Item added successfully in Cart";
-  setTimeout(function () {
-    $("#success").html("");
-  }, 1700);
+});
+
+
+addToCartButton = document.querySelectorAll(".add-to-cart-button");
+
+document.querySelectorAll('.add-to-cart-button').forEach(function(addToCartButton) {
+    addToCartButton.addEventListener('click', function() {
+        addToCartButton.classList.add('added');
+        setTimeout(function(){
+            addToCartButton.classList.remove('added');
+        }, 370);
+    });
 });
 
 // Clear items
