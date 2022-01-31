@@ -1,14 +1,15 @@
 <div align="center">
   
-# York Fresh
+# York Fresh (E-commerce)
+  
 
 ## My hackathon project from the _UNHack 2021_, organized by the Lassonde School of Engineering.
 
-![1st page](https://user-images.githubusercontent.com/91167955/147101703-0c123b9d-9ddc-433f-8d0c-6094941ddfa5.png)
+![image](https://user-images.githubusercontent.com/91167955/151776602-a6b1515b-7a29-4935-8297-9f54e28cfe2c.png)
 _____________________
-![2nd page](https://user-images.githubusercontent.com/91167955/147101740-661609c0-c027-4970-83af-5f99946bc0e5.png)
+![image](https://user-images.githubusercontent.com/91167955/151776691-613c1b27-d809-484b-9d97-fc568b0fb5c6.png)
 _____________________
-![3rd page](https://user-images.githubusercontent.com/91167955/147101751-1f9b8d00-7cc8-4c36-a2de-749d14e6804f.png)
+![image](https://user-images.githubusercontent.com/91167955/151776772-cabb7802-181a-4afa-9f3b-5a3a9ca1679a.png)
 _____________________
-![4th page](https://user-images.githubusercontent.com/91167955/147101754-71260682-06e8-44d1-b435-98a394dc09f7.png)
+![image](https://user-images.githubusercontent.com/91167955/151776906-328b2e65-8c73-41ac-91ab-3187af8b751d.png)
 </div>
